@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:fontFamily="@font/playball"
+        android:gravity="center"
+        android:text="@string/head"
+        android:textColor="#03A9F4"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/glass_antiqua"
+        android:text="@string/shead"
+        android:textColor="#FF5722"
+        android:textSize="29sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subhead"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlehead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:fontFamily="@font/chonburi"
+            android:text="@string/thead"
+            android:textColor="#00BCD4"
+            android:textSize="27sp"
+            android:textStyle="bold|italic" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="all"
+                android:text="@string/text"
+                android:textSize="24sp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
